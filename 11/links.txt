@@ -1,6 +1,0 @@
-ConfigureEnvironmentForSiteMailboxes
-http://www.oneplacesolutions.com/support/0109.html
-
-ConfigureRemotBlobStorage
-https://technet.microsoft.com/en-us/library/ee748631.aspx
-

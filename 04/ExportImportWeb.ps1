@@ -1,5 +1,4 @@
-﻿if ((Get-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue) -eq $null) 
-{
+﻿if ((Get-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue) -eq $null) {
     Add-PSSnapin "Microsoft.SharePoint.PowerShell"
 }
 
@@ -12,5 +11,5 @@ Write-Host "Export done"
 #Import
 New-SPSite http://sp2016/sites/Import -OwnerAlias "spdom\Administrator" -Language 1033 -Template "ENTERWIKI#0"
 Write-Host "Site created"
-Import-SPWeb -Identity http://sp2016/sites/Import -Path "d:\SP2016_export.cmp"
+Import-SPWeb -Identity http://sp2016/sites/Import -Path "d:\entwiki-1033.cmp"
 Write-Host "Import done"

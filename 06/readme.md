@@ -1,0 +1,1 @@
+[Configure ADFS](https://sharepointobservations.wordpress.com/2015/02/24/sharepoint-2013-and-adfs-3-0-lab-environment/)

@@ -72,15 +72,3 @@ Write-Progress -Activity "Provisioning User Profile Service Application" -Status
 New-SPProfileServiceApplicationProxy -Name ($UserProfileServiceName + " Proxy") -ServiceApplication $UserProfileSA 
  
 Write-Progress -Activity "Provisioning User Profile Service Application" -Status "Starting User Profile Synchronization Service" 
- 
-# Start-SPServiceInstance $UserProfileSyncServiceInstance  
- 
-# while ($UserProfileSyncServiceInstance.status -ne "online") 
-# { 
-# pollservice 
-# Write-Progress -Activity "Provisioning User Profile Service Application" -Status "Waiting for User Profile Synchronization Service to Start" 
-# $UserProfileSyncServiceInstance = get-spserviceinstance | where {$_.server -like "*" + $ProfileSyncServer -and $_.Typename -eq "User Profile Synchronization Service"} 
-# } 
- 
-# Write-Host "Resetting IIS" 
-# cmd.exe /c "iisreset $ProfileSyncServer /noforce" New-SPProfileServiceApplication -Name User_Profiles  -ApplicationPool $appPool
