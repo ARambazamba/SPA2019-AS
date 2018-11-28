@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "d:\\SPA2019-AS\\06 Auth\\ClaimsViewer\\ClaimsViewer\\ClaimsViewer.csproj",
+  "TargetFramework": "v4.5",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
