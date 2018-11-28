@@ -8,29 +8,26 @@ $SearchServiceName = "Smart Search Service"
 $SearchServiceProxyName = "Search SA Proxy"
  
 $DatabaseServer = "sp2016"
-$DatabaseName = "SP2016SearchDB"
+$DatabaseName = "SmartSearchDB"
  
 Write-Host -ForegroundColor Yellow "Checking if Search Application Pool exists"
 $spAppPool = Get-SPServiceApplicationPool -Identity $SearchAppPoolName -ErrorAction SilentlyContinue
  
-if (!$spAppPool)
-{
+if (!$spAppPool) {
     Write-Host -ForegroundColor Green "Creating Search Application Pool"
     $spAppPool = New-SPServiceApplicationPool -Name $SearchAppPoolName -Account $SearchAppPoolAccountName -Verbose
 }
  
 Write-Host -ForegroundColor Yellow "Checking if Search Service Application exists"
 $ServiceApplication = Get-SPEnterpriseSearchServiceApplication -Identity $SearchServiceName -ErrorAction SilentlyContinue
-if (!$ServiceApplication)
-{
+if (!$ServiceApplication) {
     Write-Host -ForegroundColor Green "Creating Search Service Application"
     $ServiceApplication = New-SPEnterpriseSearchServiceApplication -Name $SearchServiceName -ApplicationPool $spAppPool.Name -DatabaseServer  $DatabaseServer -DatabaseName $DatabaseName
 }
  
 Write-Host -ForegroundColor Yellow "Checking if Search Service Application Proxy exists"
 $Proxy = Get-SPEnterpriseSearchServiceApplicationProxy -Identity $SearchServiceProxyName -ErrorAction SilentlyContinue
-if (!$Proxy)
-{
+if (!$Proxy) {
     Write-Host -ForegroundColor Green "Creating Search Service Application Proxy"
     New-SPEnterpriseSearchServiceApplicationProxy -Name $SearchServiceProxyName -SearchApplication $SearchServiceName
 }
@@ -54,9 +51,13 @@ New-SPEnterpriseSearchIndexComponent -SearchTopology $SearchTopology -SearchServ
  
 Write-Host -ForegroundColor Green "Activating new topology"
 $SearchTopology.Activate()
+
+exit
  
-Write-Host -ForegroundColor Yellow "Next call will provoke an error but after that the old topology can be deleted - just ignore it!"
-$InitialSearchTopology.Synchronize()
+# Write-Host -ForegroundColor Yellow "Next call will provoke an error but after that the old topology can be deleted - just ignore it!"
+# $InitialSearchTopology.Synchronize()
+
+exit
  
 Write-Host -ForegroundColor Yellow "Deleting old topology"
 Remove-SPEnterpriseSearchTopology -Identity $InitialSearchTopology -Confirm:$false
