@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="DogContentType" Id="64509fdc-95af-4956-8f8a-2a92220499f4" Scope="Web">
+  <ElementManifests>
+    <ElementManifest Location="Breed\Elements.xml" />
+    <ElementManifest Location="Dog\Elements.xml" />
+    <ElementManifest Location="DogList\Elements.xml" />
+    <ElementFile Location="DogList\Schema.xml" />
+  </ElementManifests>
+</Feature>

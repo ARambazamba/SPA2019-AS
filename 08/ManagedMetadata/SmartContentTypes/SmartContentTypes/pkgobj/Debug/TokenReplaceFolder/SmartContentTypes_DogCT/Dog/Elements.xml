@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100848200CF263E427195FBB27A8082ACC1" Name="Dog" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{d3c5491b-0e2b-4085-ad3b-af658a34e272}" DisplayName="Breed" Required="FALSE" Name="Breed" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

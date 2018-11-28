@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="80c36bb4-af6d-47de-b658-9044efe2a5a2" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="SmartContentTypes.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="SmartContentTypes_DogCT\Feature.xml" />
+  </FeatureManifests>
+</Solution>
