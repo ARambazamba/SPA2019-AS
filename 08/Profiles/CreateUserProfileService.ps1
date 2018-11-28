@@ -12,25 +12,18 @@ function PollService
 #Set Script Variables 
  
 Write-Progress -Activity "Provisioning User Profile Service Application" -Status "Creating Script Variables" 
- 
+
+$UserProfileServiceName = "User Profile Service" 
 $ProfileSyncServer = "SP2016" 
- 
 $UserProfileDB = "SmartPortal_Profile_DB" 
- 
 $UserProfileSyncDB = "SmartPortal_Profile_Sync_DB" 
- 
 $UserProfileSocialDB = "SmartPortal_Profile_Social_DB" 
  
 $UserProfileApplicationPoolManagedAccount = "spdom\spservice" 
- 
 $UserProfileApplicationPoolPassword = "Pa$$w0rd" 
- 
+
 $SPFarmAccount = "spdom\spservice" 
- 
 $FarmAccountPassword = "Pa$$w0rd" 
- 
-$UserProfileServiceName = "User Profile Service" 
- 
  
 #Begin Script 
  
@@ -70,5 +63,3 @@ $UserProfileSA.SetSynchronizationMachine($ProfileSyncServer, $UserProfileSyncSer
 Write-Progress -Activity "Provisioning User Profile Service Application" -Status "Creating User Profile Service Application Proxy" 
  
 New-SPProfileServiceApplicationProxy -Name ($UserProfileServiceName + " Proxy") -ServiceApplication $UserProfileSA 
- 
-Write-Progress -Activity "Provisioning User Profile Service Application" -Status "Starting User Profile Synchronization Service" 

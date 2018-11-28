@@ -1,0 +1,1 @@
+[KQL Syntax Reference](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
