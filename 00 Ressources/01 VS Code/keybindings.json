@@ -1,0 +1,12 @@
+[
+    // Save all
+    {
+        "key": "ctrl+s",
+        "command": "workbench.action.files.saveAll"
+    },
+    // Stage current file
+    {
+        "key": "alt+s",
+        "command": "git.stage"
+    }
+]
