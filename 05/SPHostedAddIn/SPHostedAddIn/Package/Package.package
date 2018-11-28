@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="7c4364de-5509-4511-8acc-bf8812bbf9ee" 
+        solutionId="7c4364de-5509-4511-8acc-bf8812bbf9ee" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SPHostedAddIn"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="ee009069-460d-4a78-948e-1bc1799615bb" />
+  </features>
+</package>

@@ -1,0 +1,25 @@
+<!-- http://technet.microsoft.com/en-us/library/cc287749.aspx -->
+
+<Configuration>  
+  <!-- Package ID for SharePoint Foundation -->
+  <Package Id="sts">
+    <Setting Id="LAUNCHEDFROMSETUPSTS" Value="Yes"/>
+  </Package>
+
+  <!-- Package ID for SharePoint Server -->
+  <Package Id="spswfe">
+    <Setting Id="SETUPCALLED" Value="1"/>
+    <!-- 0 Std | 1 Ent -->
+    <Setting Id="OFFICESERVERPREMIUM" Value="1" />
+  </Package>
+
+  <PIDKEY Value="TY6N4-K9WD3-JD2J2-VYKTJ-GVJ2J"/>
+  <Setting Id="SERVERROLE" Value="Single Server Farm"/>
+  <Setting Id="USINGUIINSTALLMODE" Value="0"/>
+  <Setting Id="SETUPTYPE" Value="CLEAN_INSTALL"/>
+  <Setting Id="SETUP_REBOOT" Value="Never"/>
+  <Setting Id="AllowWindowsClientInstall" Value="True"/>
+  <ARP ARPCOMMENTS="" ARPCONTACT="" />
+  <Display Level="basic" CompletionNotice="No" AcceptEula="Yes"/>
+  <Logging Type="verbose" Path="%temp%" Template="SharePoint Server Setup(*).log"/>
+</Configuration>  

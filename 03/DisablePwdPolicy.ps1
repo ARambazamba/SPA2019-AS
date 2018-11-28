@@ -1,0 +1,1 @@
+Set-ADDefaultDomainPasswordPolicy -identity spdom.local -ComplexityEnabled $false -maxpasswordage 00.00:00:00 -minpasswordage 00.00:00:00 -minpasswordlength 4 -passwordhistorycount 0

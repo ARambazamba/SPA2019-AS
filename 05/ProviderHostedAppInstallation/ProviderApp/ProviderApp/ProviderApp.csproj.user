@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SharePointSiteUrl>http://sp2016/</SharePointSiteUrl>
+    <OfficeAndSharePointStartAction>Internet Explorer</OfficeAndSharePointStartAction>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{C1CDDADD-2546-481F-9697-4EA41081F2FC}">
+        <ProjectStore>
+          <AppInstancePackageModifiedTime>2017-08-30T07:58:20.3882466Z</AppInstancePackageModifiedTime>
+          <AppInstanceId>6551a1d8-9b47-4cb5-8bcc-5b4bc308fcc3</AppInstanceId>
+        </ProjectStore>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

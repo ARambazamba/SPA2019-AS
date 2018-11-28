@@ -1,0 +1,70 @@
+﻿
+
+#sideNavBox {
+  display:  none;
+}
+
+#contentBox {
+  margin: 0px;
+  padding: 0px;
+}
+
+#top {
+  background-color:#fefefe;
+  padding: 10px;
+}
+
+.gridTable {
+  font-size: 14px;
+}
+
+.gridTable, .gridHeaderRow th, .gridRow td, .gridAlternatingRow td {
+  border: 1px solid black;
+}
+
+.gridHeaderRow th {
+  background-color: Black;
+  color: White;
+  text-align: left;
+  padding: 2px;
+}
+
+.gridRow td {
+  padding: 0px;
+  vertical-align: text-top;
+  min-width: 520px;
+}
+
+.gridRow td div, .gridAlternatingRow td div {
+  padding: 4px;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  line-break:  strict;
+  word-break: break-all;
+}
+
+.gridAlternatingRow td {
+  background-color: #EEEEEE;
+}
+
+.DisplayTable {
+  padding: 4px;
+  margin-left: 16px;
+  border: solid 2px black;
+  background-color: #DDDDDD;
+}
+
+.HeaderCell {
+  vertical-align: top;
+  color: White;
+  background-color: black;
+  padding: 4px;
+}
+
+.BodyCell {
+  vertical-align: top;
+  background-color: White;
+  padding: 4px;
+  border: solid 1 black;
+  empty-cells: show;
+}

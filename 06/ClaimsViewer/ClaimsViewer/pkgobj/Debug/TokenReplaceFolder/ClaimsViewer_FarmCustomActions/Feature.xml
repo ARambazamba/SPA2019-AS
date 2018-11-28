@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="f7454adc-0224-4afc-b4cc-84658b570617" Scope="Farm" Title="Claims Viewer Demo">
+  <ElementManifests>
+    <ElementManifest Location="FarmCustomActions\Elements.xml" />
+  </ElementManifests>
+</Feature>

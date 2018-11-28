@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="75992272-af7d-4126-ad2d-4467e362a348" solutionId="75992272-af7d-4126-ad2d-4467e362a348" resetWebServer="false" sharePointProductVersion="15.0" name="ClaimsViewer" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="ae15e92f-e3ba-4182-a3b7-f20ccb00a180" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="3bc4240e-76db-439d-b923-a3dda27db549" />
+  </projectItems>
+</package>

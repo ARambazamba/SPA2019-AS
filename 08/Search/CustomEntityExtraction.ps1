@@ -1,0 +1,2 @@
+﻿$searchApp = Get-SPEnterpriseSearchServiceApplication
+Import-SPEnterpriseSearchCustomExtractionDictionary -SearchApplication $searchApp -Filename "\\SP2016\04\bin\entities.csv" -DictionaryName Microsoft.UserDictionaries.EntityExtraction.Custom.Word.1 

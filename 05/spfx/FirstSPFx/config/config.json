@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/firstSpFxWp/FirstSpFxWpWebPart.js",
+      "manifest": "./src/webparts/firstSpFxWp/FirstSpFxWpWebPart.manifest.json",
+      "outputPath": "./dist/first-sp-fx-wp-web-part.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "FirstSpFxWpWebPartStrings": "webparts/firstSpFxWp/loc/{locale}.js"
+  }
+}

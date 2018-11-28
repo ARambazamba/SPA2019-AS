@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Published:70EDFC97-B41D-43C5-B751-7C00AD999804-->
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest" Name="ProviderApp" ProductID="{c2e9536c-6e81-48d4-a470-acca72cf7db8}" Version="1.0.0.4" SharePointMinVersion="16.0.0.0">
+  <Properties>
+    <Title>ProviderApp</Title>
+    <StartPage>http://localhost:8088/Pages/Default.aspx?{StandardTokens}</StartPage>
+  </Properties>
+  <AppPrincipal>
+    <RemoteWebApplication ClientId="59651c55-335e-4a44-b636-d9540e2ae4a8" />
+  </AppPrincipal>
+  <AppPermissionRequests>
+    <AppPermissionRequest Scope="http://sharepoint/content/sitecollection" Right="Read" />
+    <AppPermissionRequest Scope="http://sharepoint/content/sitecollection/web" Right="Read" />
+  </AppPermissionRequests>
+</App>
