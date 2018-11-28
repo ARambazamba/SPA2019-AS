@@ -1,3 +1,5 @@
-[ConfigureEnvironmentForSiteMailboxes](http://www.oneplacesolutions.com/support/0109.html)
+# Monitoring
 
-[ConfigureRemotBlobStorage](https://technet.microsoft.com/en-us/library/ee748631.aspx)
+[SharePoint Performance Counters](https://docs.microsoft.com/en-us/sharepoint/administration/monitoring-and-maintaining)
+
+[Configure Remot BlobStorage](https://docs.microsoft.com/en-us/sharepoint/administration/install-and-configure-rbs)
