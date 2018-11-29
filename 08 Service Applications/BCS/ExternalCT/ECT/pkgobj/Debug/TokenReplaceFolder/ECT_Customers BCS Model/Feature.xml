@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="fe774922-1875-40fc-93ab-c56fc9ca84c7" ReceiverAssembly="Microsoft.Office.SharePoint.ClientExtensions, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" ReceiverClass="Microsoft.Office.SharePoint.ClientExtensions.Deployment.ImportModelReceiver" Scope="Farm" Title="ECT Feature1">
+  <ElementManifests>
+    <ElementFile Location="CustomersModel\CustomersModel.bdcm" />
+    <ElementFile Location="BdcAssemblies\ECT.dll" />
+  </ElementManifests>
+  <Properties>
+    <Property Key="CustomersModel" Value="BdcAssemblies\ECT.dll" />
+    <Property Key="IncrementalUpdate" Value="true" />
+    <Property Key="ModelFileName" Value="CustomersModel\CustomersModel.bdcm" />
+  </Properties>
+</Feature>
